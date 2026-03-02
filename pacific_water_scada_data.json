@@ -1,0 +1,758 @@
+{
+  "metadata": {
+    "system": "Pacific Water SCADA",
+    "city": "West Pacific",
+    "population": 10000,
+    "created_date": "2026-03-01T20:08:12.257331",
+    "graph_statistics": {
+      "total_components": 27,
+      "total_connections": 30,
+      "network_diameter": 8,
+      "average_clustering_coefficient": 0.0,
+      "component_types": {
+        "treatment_plant": 1,
+        "scada_server": 1,
+        "communication_node": 3,
+        "pumping_station": 2,
+        "reservoir": 2,
+        "distribution_main": 3,
+        "customer_zone": 4,
+        "rtu": 3,
+        "flow_meter": 1,
+        "level_sensor": 2,
+        "pressure_gauge": 2,
+        "prv": 1,
+        "check_valve": 1,
+        "isolation_valve": 1
+      },
+      "connection_types": {
+        "communication": 6,
+        "hydraulic": 11,
+        "control": 8,
+        "monitoring": 5
+      }
+    }
+  },
+  "components": [
+    {
+      "id": "tp_001",
+      "name": "West Pacific Water Treatment Plant",
+      "component_type": "treatment_plant",
+      "location": "123 Water Works Road, Kaunakakai, Molokai, HI",
+      "latitude": 21.1952,
+      "longitude": -157.0547,
+      "capacity": 5000,
+      "unit": "gpm",
+      "operational_status": "active",
+      "installed_date": "2015-03-15",
+      "metadata": {}
+    },
+    {
+      "id": "scada_srv_001",
+      "name": "Central SCADA Server",
+      "component_type": "scada_server",
+      "location": "123 Water Works Road, Kaunakakai, Molokai, HI",
+      "latitude": 21.1952,
+      "longitude": -157.0547,
+      "capacity": null,
+      "unit": null,
+      "operational_status": "active",
+      "installed_date": "2018-06-20",
+      "metadata": {}
+    },
+    {
+      "id": "paccom_001",
+      "name": "PacCom Central Gateway",
+      "component_type": "communication_node",
+      "location": "100 Power Rd, Kaunakakai, Molokai, HI",
+      "latitude": 21.1952,
+      "longitude": -157.0547,
+      "capacity": null,
+      "unit": null,
+      "operational_status": "active",
+      "installed_date": null,
+      "metadata": {
+        "provider": "PacCom",
+        "type": "fiber/5G",
+        "bandwidth_gbps": 100
+      }
+    },
+    {
+      "id": "paccom_002",
+      "name": "PacCom West Hub",
+      "component_type": "communication_node",
+      "location": "Maunaloa Ridge, Molokai, HI",
+      "latitude": 21.2156,
+      "longitude": -157.1298,
+      "capacity": null,
+      "unit": null,
+      "operational_status": "active",
+      "installed_date": null,
+      "metadata": {
+        "provider": "PacCom",
+        "type": "fiber/5G",
+        "bandwidth_gbps": 40
+      }
+    },
+    {
+      "id": "paccom_003",
+      "name": "PacCom East Tower",
+      "component_type": "communication_node",
+      "location": "East End Rd, Molokai, HI",
+      "latitude": 21.1865,
+      "longitude": -156.8945,
+      "capacity": null,
+      "unit": null,
+      "operational_status": "active",
+      "installed_date": null,
+      "metadata": {
+        "provider": "PacCom",
+        "type": "5G",
+        "bandwidth_gbps": 20
+      }
+    },
+    {
+      "id": "ps_001",
+      "name": "Primary Pumping Station - North",
+      "component_type": "pumping_station",
+      "location": "456 North Shore Road, Molokai, HI",
+      "latitude": 21.2482,
+      "longitude": -157.0623,
+      "capacity": 3000,
+      "unit": "gpm",
+      "operational_status": "active",
+      "installed_date": "2016-09-10",
+      "metadata": {}
+    },
+    {
+      "id": "ps_002",
+      "name": "Secondary Pumping Station - East",
+      "component_type": "pumping_station",
+      "location": "789 East End Road, Molokai, HI",
+      "latitude": 21.1865,
+      "longitude": -156.8945,
+      "capacity": 2000,
+      "unit": "gpm",
+      "operational_status": "active",
+      "installed_date": "2017-11-05",
+      "metadata": {}
+    },
+    {
+      "id": "res_001",
+      "name": "North Storage Reservoir",
+      "component_type": "reservoir",
+      "location": "500 North Shore Road, Molokai, HI",
+      "latitude": 21.2561,
+      "longitude": -157.0854,
+      "capacity": 1000000,
+      "unit": "gallons",
+      "operational_status": "active",
+      "installed_date": "2010-01-20",
+      "metadata": {}
+    },
+    {
+      "id": "res_002",
+      "name": "East Storage Reservoir",
+      "component_type": "reservoir",
+      "location": "800 East End Road, Molokai, HI",
+      "latitude": 21.1802,
+      "longitude": -156.8567,
+      "capacity": 500000,
+      "unit": "gallons",
+      "operational_status": "active",
+      "installed_date": "2012-05-15",
+      "metadata": {}
+    },
+    {
+      "id": "dm_001",
+      "name": "Main Distribution Line - North",
+      "component_type": "distribution_main",
+      "location": "North Shore zone, Molokai, HI",
+      "latitude": 21.2312,
+      "longitude": -157.0736,
+      "capacity": null,
+      "unit": null,
+      "operational_status": "active",
+      "installed_date": null,
+      "metadata": {
+        "diameter_inches": 12,
+        "length_km": 4.5
+      }
+    },
+    {
+      "id": "dm_002",
+      "name": "Main Distribution Line - East",
+      "component_type": "distribution_main",
+      "location": "East End zone, Molokai, HI",
+      "latitude": 21.1834,
+      "longitude": -156.8756,
+      "capacity": null,
+      "unit": null,
+      "operational_status": "active",
+      "installed_date": null,
+      "metadata": {
+        "diameter_inches": 10,
+        "length_km": 3.2
+      }
+    },
+    {
+      "id": "dm_003",
+      "name": "Main Distribution Line - Central",
+      "component_type": "distribution_main",
+      "location": "Central zone, Kaunakakai, Molokai, HI",
+      "latitude": 21.1923,
+      "longitude": -157.0621,
+      "capacity": null,
+      "unit": null,
+      "operational_status": "active",
+      "installed_date": null,
+      "metadata": {
+        "diameter_inches": 14,
+        "length_km": 2.8
+      }
+    },
+    {
+      "id": "cz_001",
+      "name": "Residential Zone - North",
+      "component_type": "customer_zone",
+      "location": "Maunaloa, North Molokai, HI",
+      "latitude": 21.2156,
+      "longitude": -157.1298,
+      "capacity": null,
+      "unit": null,
+      "operational_status": "active",
+      "installed_date": null,
+      "metadata": {
+        "customers": 2500,
+        "avg_consumption_gpm": 800
+      }
+    },
+    {
+      "id": "cz_002",
+      "name": "Commercial Zone - Central",
+      "component_type": "customer_zone",
+      "location": "Kaunakakai Downtown, Molokai, HI",
+      "latitude": 21.1943,
+      "longitude": -157.0519,
+      "capacity": null,
+      "unit": null,
+      "operational_status": "active",
+      "installed_date": null,
+      "metadata": {
+        "customers": 1500,
+        "avg_consumption_gpm": 600
+      }
+    },
+    {
+      "id": "cz_003",
+      "name": "Industrial Zone - East",
+      "component_type": "customer_zone",
+      "location": "Pukoo, East Molokai, HI",
+      "latitude": 21.1745,
+      "longitude": -156.8234,
+      "capacity": null,
+      "unit": null,
+      "operational_status": "active",
+      "installed_date": null,
+      "metadata": {
+        "customers": 800,
+        "avg_consumption_gpm": 500
+      }
+    },
+    {
+      "id": "cz_004",
+      "name": "Residential Zone - South",
+      "component_type": "customer_zone",
+      "location": "Mapulehu, South Molokai, HI",
+      "latitude": 21.1621,
+      "longitude": -157.0345,
+      "capacity": null,
+      "unit": null,
+      "operational_status": "active",
+      "installed_date": null,
+      "metadata": {
+        "customers": 2200,
+        "avg_consumption_gpm": 700
+      }
+    },
+    {
+      "id": "rtu_001",
+      "name": "RTU - North Station",
+      "component_type": "rtu",
+      "location": "456 North Shore Road, Molokai, HI",
+      "latitude": 21.2482,
+      "longitude": -157.0623,
+      "capacity": null,
+      "unit": null,
+      "operational_status": "active",
+      "installed_date": "2018-03-10",
+      "metadata": {}
+    },
+    {
+      "id": "rtu_002",
+      "name": "RTU - East Station",
+      "component_type": "rtu",
+      "location": "789 East End Road, Molokai, HI",
+      "latitude": 21.1865,
+      "longitude": -156.8945,
+      "capacity": null,
+      "unit": null,
+      "operational_status": "active",
+      "installed_date": "2018-03-10",
+      "metadata": {}
+    },
+    {
+      "id": "rtu_003",
+      "name": "RTU - North Reservoir",
+      "component_type": "rtu",
+      "location": "500 North Shore Road, Molokai, HI",
+      "latitude": 21.2561,
+      "longitude": -157.0854,
+      "capacity": null,
+      "unit": null,
+      "operational_status": "active",
+      "installed_date": "2019-07-15",
+      "metadata": {}
+    },
+    {
+      "id": "fm_001",
+      "name": "Flow Meter - Treatment Plant Exit",
+      "component_type": "flow_meter",
+      "location": "Kaunakakai Treatment Plant",
+      "latitude": 21.1952,
+      "longitude": -157.0547,
+      "capacity": null,
+      "unit": null,
+      "operational_status": "active",
+      "installed_date": null,
+      "metadata": {}
+    },
+    {
+      "id": "ls_001",
+      "name": "Level Sensor - North Reservoir",
+      "component_type": "level_sensor",
+      "location": "North Shore Reservoir",
+      "latitude": 21.2561,
+      "longitude": -157.0854,
+      "capacity": null,
+      "unit": null,
+      "operational_status": "active",
+      "installed_date": null,
+      "metadata": {}
+    },
+    {
+      "id": "ls_002",
+      "name": "Level Sensor - East Reservoir",
+      "component_type": "level_sensor",
+      "location": "East End Reservoir",
+      "latitude": 21.1802,
+      "longitude": -156.8567,
+      "capacity": null,
+      "unit": null,
+      "operational_status": "active",
+      "installed_date": null,
+      "metadata": {}
+    },
+    {
+      "id": "pg_001",
+      "name": "Pressure Gauge - North Line",
+      "component_type": "pressure_gauge",
+      "location": "North Shore Distribution Main",
+      "latitude": 21.2312,
+      "longitude": -157.0736,
+      "capacity": null,
+      "unit": null,
+      "operational_status": "active",
+      "installed_date": null,
+      "metadata": {}
+    },
+    {
+      "id": "pg_002",
+      "name": "Pressure Gauge - East Line",
+      "component_type": "pressure_gauge",
+      "location": "East End Distribution Main",
+      "latitude": 21.1834,
+      "longitude": -156.8756,
+      "capacity": null,
+      "unit": null,
+      "operational_status": "active",
+      "installed_date": null,
+      "metadata": {}
+    },
+    {
+      "id": "prv_001",
+      "name": "Pressure Reducing Valve - North",
+      "component_type": "prv",
+      "location": "North Shore PRV Station, Molokai, HI",
+      "latitude": 21.2234,
+      "longitude": -157.0892,
+      "capacity": null,
+      "unit": null,
+      "operational_status": "active",
+      "installed_date": null,
+      "metadata": {}
+    },
+    {
+      "id": "cv_001",
+      "name": "Check Valve - Pump Station North",
+      "component_type": "check_valve",
+      "location": "North Pumping Station, Molokai, HI",
+      "latitude": 21.2482,
+      "longitude": -157.0623,
+      "capacity": null,
+      "unit": null,
+      "operational_status": "active",
+      "installed_date": null,
+      "metadata": {}
+    },
+    {
+      "id": "iv_001",
+      "name": "Isolation Valve - North Main",
+      "component_type": "isolation_valve",
+      "location": "North Shore Main Valve Station, Molokai, HI",
+      "latitude": 21.2401,
+      "longitude": -157.0679,
+      "capacity": null,
+      "unit": null,
+      "operational_status": "active",
+      "installed_date": null,
+      "metadata": {}
+    }
+  ],
+  "connections": [
+    {
+      "source_id": "paccom_001",
+      "target_id": "paccom_002",
+      "connection_type": "communication",
+      "flow_direction": "bidirectional",
+      "capacity": null,
+      "length_km": null,
+      "diameter_inches": null,
+      "material": null,
+      "metadata": {
+        "link": "fiber_trunk"
+      }
+    },
+    {
+      "source_id": "paccom_001",
+      "target_id": "paccom_003",
+      "connection_type": "communication",
+      "flow_direction": "bidirectional",
+      "capacity": null,
+      "length_km": null,
+      "diameter_inches": null,
+      "material": null,
+      "metadata": {
+        "link": "fiber_trunk"
+      }
+    },
+    {
+      "source_id": "scada_srv_001",
+      "target_id": "paccom_001",
+      "connection_type": "communication",
+      "flow_direction": "bidirectional",
+      "capacity": null,
+      "length_km": null,
+      "diameter_inches": null,
+      "material": null,
+      "metadata": {}
+    },
+    {
+      "source_id": "tp_001",
+      "target_id": "ps_001",
+      "connection_type": "hydraulic",
+      "flow_direction": "unidirectional",
+      "capacity": 3000,
+      "length_km": 1.2,
+      "diameter_inches": 12,
+      "material": "PVC",
+      "metadata": {}
+    },
+    {
+      "source_id": "tp_001",
+      "target_id": "ps_002",
+      "connection_type": "hydraulic",
+      "flow_direction": "unidirectional",
+      "capacity": 2000,
+      "length_km": 1.8,
+      "diameter_inches": 10,
+      "material": "PVC",
+      "metadata": {}
+    },
+    {
+      "source_id": "ps_001",
+      "target_id": "res_001",
+      "connection_type": "hydraulic",
+      "flow_direction": "unidirectional",
+      "capacity": 3000,
+      "length_km": 0.3,
+      "diameter_inches": 10,
+      "material": "Steel",
+      "metadata": {}
+    },
+    {
+      "source_id": "ps_002",
+      "target_id": "res_002",
+      "connection_type": "hydraulic",
+      "flow_direction": "unidirectional",
+      "capacity": 2000,
+      "length_km": 0.5,
+      "diameter_inches": 8,
+      "material": "Steel",
+      "metadata": {}
+    },
+    {
+      "source_id": "res_001",
+      "target_id": "dm_001",
+      "connection_type": "hydraulic",
+      "flow_direction": "unidirectional",
+      "capacity": 2500,
+      "length_km": 0.4,
+      "diameter_inches": 12,
+      "material": "PVC",
+      "metadata": {}
+    },
+    {
+      "source_id": "res_002",
+      "target_id": "dm_002",
+      "connection_type": "hydraulic",
+      "flow_direction": "unidirectional",
+      "capacity": 1500,
+      "length_km": 0.3,
+      "diameter_inches": 10,
+      "material": "PVC",
+      "metadata": {}
+    },
+    {
+      "source_id": "res_001",
+      "target_id": "dm_003",
+      "connection_type": "hydraulic",
+      "flow_direction": "unidirectional",
+      "capacity": 2000,
+      "length_km": 0.6,
+      "diameter_inches": 12,
+      "material": "PVC",
+      "metadata": {}
+    },
+    {
+      "source_id": "dm_001",
+      "target_id": "cz_001",
+      "connection_type": "hydraulic",
+      "flow_direction": "unidirectional",
+      "capacity": 800,
+      "length_km": 1.2,
+      "diameter_inches": 8,
+      "material": "PVC",
+      "metadata": {}
+    },
+    {
+      "source_id": "dm_003",
+      "target_id": "cz_002",
+      "connection_type": "hydraulic",
+      "flow_direction": "unidirectional",
+      "capacity": 600,
+      "length_km": 0.8,
+      "diameter_inches": 6,
+      "material": "PVC",
+      "metadata": {}
+    },
+    {
+      "source_id": "dm_002",
+      "target_id": "cz_003",
+      "connection_type": "hydraulic",
+      "flow_direction": "unidirectional",
+      "capacity": 500,
+      "length_km": 1.5,
+      "diameter_inches": 6,
+      "material": "PVC",
+      "metadata": {}
+    },
+    {
+      "source_id": "dm_001",
+      "target_id": "cz_004",
+      "connection_type": "hydraulic",
+      "flow_direction": "unidirectional",
+      "capacity": 700,
+      "length_km": 1.8,
+      "diameter_inches": 8,
+      "material": "PVC",
+      "metadata": {}
+    },
+    {
+      "source_id": "scada_srv_001",
+      "target_id": "rtu_001",
+      "connection_type": "control",
+      "flow_direction": "bidirectional",
+      "capacity": null,
+      "length_km": null,
+      "diameter_inches": null,
+      "material": null,
+      "metadata": {}
+    },
+    {
+      "source_id": "scada_srv_001",
+      "target_id": "rtu_002",
+      "connection_type": "control",
+      "flow_direction": "bidirectional",
+      "capacity": null,
+      "length_km": null,
+      "diameter_inches": null,
+      "material": null,
+      "metadata": {}
+    },
+    {
+      "source_id": "scada_srv_001",
+      "target_id": "rtu_003",
+      "connection_type": "control",
+      "flow_direction": "bidirectional",
+      "capacity": null,
+      "length_km": null,
+      "diameter_inches": null,
+      "material": null,
+      "metadata": {}
+    },
+    {
+      "source_id": "rtu_001",
+      "target_id": "paccom_002",
+      "connection_type": "communication",
+      "flow_direction": "bidirectional",
+      "capacity": null,
+      "length_km": null,
+      "diameter_inches": null,
+      "material": null,
+      "metadata": {}
+    },
+    {
+      "source_id": "rtu_002",
+      "target_id": "paccom_002",
+      "connection_type": "communication",
+      "flow_direction": "bidirectional",
+      "capacity": null,
+      "length_km": null,
+      "diameter_inches": null,
+      "material": null,
+      "metadata": {}
+    },
+    {
+      "source_id": "rtu_003",
+      "target_id": "paccom_003",
+      "connection_type": "communication",
+      "flow_direction": "bidirectional",
+      "capacity": null,
+      "length_km": null,
+      "diameter_inches": null,
+      "material": null,
+      "metadata": {}
+    },
+    {
+      "source_id": "rtu_001",
+      "target_id": "ps_001",
+      "connection_type": "control",
+      "flow_direction": "bidirectional",
+      "capacity": null,
+      "length_km": null,
+      "diameter_inches": null,
+      "material": null,
+      "metadata": {}
+    },
+    {
+      "source_id": "rtu_002",
+      "target_id": "ps_002",
+      "connection_type": "control",
+      "flow_direction": "bidirectional",
+      "capacity": null,
+      "length_km": null,
+      "diameter_inches": null,
+      "material": null,
+      "metadata": {}
+    },
+    {
+      "source_id": "fm_001",
+      "target_id": "rtu_001",
+      "connection_type": "monitoring",
+      "flow_direction": "unidirectional",
+      "capacity": null,
+      "length_km": null,
+      "diameter_inches": null,
+      "material": null,
+      "metadata": {}
+    },
+    {
+      "source_id": "ls_001",
+      "target_id": "rtu_003",
+      "connection_type": "monitoring",
+      "flow_direction": "unidirectional",
+      "capacity": null,
+      "length_km": null,
+      "diameter_inches": null,
+      "material": null,
+      "metadata": {}
+    },
+    {
+      "source_id": "ls_002",
+      "target_id": "rtu_002",
+      "connection_type": "monitoring",
+      "flow_direction": "unidirectional",
+      "capacity": null,
+      "length_km": null,
+      "diameter_inches": null,
+      "material": null,
+      "metadata": {}
+    },
+    {
+      "source_id": "pg_001",
+      "target_id": "rtu_001",
+      "connection_type": "monitoring",
+      "flow_direction": "unidirectional",
+      "capacity": null,
+      "length_km": null,
+      "diameter_inches": null,
+      "material": null,
+      "metadata": {}
+    },
+    {
+      "source_id": "pg_002",
+      "target_id": "rtu_002",
+      "connection_type": "monitoring",
+      "flow_direction": "unidirectional",
+      "capacity": null,
+      "length_km": null,
+      "diameter_inches": null,
+      "material": null,
+      "metadata": {}
+    },
+    {
+      "source_id": "rtu_001",
+      "target_id": "prv_001",
+      "connection_type": "control",
+      "flow_direction": "bidirectional",
+      "capacity": null,
+      "length_km": null,
+      "diameter_inches": null,
+      "material": null,
+      "metadata": {}
+    },
+    {
+      "source_id": "rtu_001",
+      "target_id": "cv_001",
+      "connection_type": "control",
+      "flow_direction": "bidirectional",
+      "capacity": null,
+      "length_km": null,
+      "diameter_inches": null,
+      "material": null,
+      "metadata": {}
+    },
+    {
+      "source_id": "rtu_001",
+      "target_id": "iv_001",
+      "connection_type": "control",
+      "flow_direction": "bidirectional",
+      "capacity": null,
+      "length_km": null,
+      "diameter_inches": null,
+      "material": null,
+      "metadata": {}
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+source_id,target_id,edge_type
+fs_001,water_tp,supplies
+fs_001,electric_sub1,supplies
+fs_002,electric_sub2,supplies
+fs_002,treatment_tp,supplies
+fs_003,electric_sub1,supplies
+water_tp,fs_001,depends_on
+electric_sub1,fs_001,depends_on
+electric_sub2,fs_002,depends_on
+treatment_tp,fs_002,depends_on

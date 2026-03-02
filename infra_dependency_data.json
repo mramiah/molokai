@@ -1,0 +1,150 @@
+{
+  "metadata": {
+    "created": "2026-03-01T20:17:10.387015",
+    "description": "Infrastructure dependency graph"
+  },
+  "nodes": [
+    {
+      "id": "water",
+      "name": "Pacific Water System",
+      "node_type": "utility",
+      "latitude": null,
+      "longitude": null,
+      "metadata": {}
+    },
+    {
+      "id": "electric",
+      "name": "Pacific Electric System",
+      "node_type": "utility",
+      "latitude": null,
+      "longitude": null,
+      "metadata": {}
+    },
+    {
+      "id": "treatment",
+      "name": "Pacific Treatment System",
+      "node_type": "utility",
+      "latitude": null,
+      "longitude": null,
+      "metadata": {}
+    },
+    {
+      "id": "paccom",
+      "name": "PacCom Network",
+      "node_type": "communication",
+      "latitude": null,
+      "longitude": null,
+      "metadata": {}
+    },
+    {
+      "id": "road",
+      "name": "Road Network",
+      "node_type": "transport",
+      "latitude": null,
+      "longitude": null,
+      "metadata": {}
+    },
+    {
+      "id": "port",
+      "name": "Molokai Port",
+      "node_type": "transport",
+      "latitude": null,
+      "longitude": null,
+      "metadata": {}
+    },
+    {
+      "id": "airport",
+      "name": "Molokai Airport",
+      "node_type": "transport",
+      "latitude": null,
+      "longitude": null,
+      "metadata": {}
+    }
+  ],
+  "edges": [
+    {
+      "source": "water",
+      "target": "paccom",
+      "edge_type": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "water",
+      "target": "road",
+      "edge_type": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "electric",
+      "target": "paccom",
+      "edge_type": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "electric",
+      "target": "road",
+      "edge_type": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "treatment",
+      "target": "paccom",
+      "edge_type": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "treatment",
+      "target": "road",
+      "edge_type": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "port",
+      "target": "water",
+      "edge_type": "services",
+      "metadata": {}
+    },
+    {
+      "source": "airport",
+      "target": "water",
+      "edge_type": "services",
+      "metadata": {}
+    },
+    {
+      "source": "port",
+      "target": "electric",
+      "edge_type": "services",
+      "metadata": {}
+    },
+    {
+      "source": "airport",
+      "target": "electric",
+      "edge_type": "services",
+      "metadata": {}
+    },
+    {
+      "source": "port",
+      "target": "treatment",
+      "edge_type": "services",
+      "metadata": {}
+    },
+    {
+      "source": "airport",
+      "target": "treatment",
+      "edge_type": "services",
+      "metadata": {}
+    },
+    {
+      "source": "paccom",
+      "target": "road",
+      "edge_type": "connected_via",
+      "metadata": {}
+    },
+    {
+      "source": "paccom",
+      "target": "port",
+      "edge_type": "connected_via",
+      "metadata": {}
+    }
+  ]
+}

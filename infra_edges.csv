@@ -1,0 +1,15 @@
+source,target,edge_type
+water,paccom,depends_on
+water,road,depends_on
+electric,paccom,depends_on
+electric,road,depends_on
+treatment,paccom,depends_on
+treatment,road,depends_on
+port,water,services
+airport,water,services
+port,electric,services
+airport,electric,services
+port,treatment,services
+airport,treatment,services
+paccom,road,connected_via
+paccom,port,connected_via

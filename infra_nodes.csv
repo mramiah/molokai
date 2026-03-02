@@ -1,0 +1,8 @@
+id,name,node_type,latitude,longitude
+water,Pacific Water System,utility,,
+electric,Pacific Electric System,utility,,
+treatment,Pacific Treatment System,utility,,
+paccom,PacCom Network,communication,,
+road,Road Network,transport,,
+port,Molokai Port,transport,,
+airport,Molokai Airport,transport,,

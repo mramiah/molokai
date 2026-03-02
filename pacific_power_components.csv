@@ -1,0 +1,14 @@
+id,name,component_type,location,latitude,longitude,capacity,unit,operational_status,installed_date
+pp_001,Kaunakakai Wind Farm,wind_farm,West Molokai ridge,21.205,-157.07,2000,kW,active,2015-06-01
+pp_002,Maunaloa Solar Array,solar_array,Maunaloa plains,21.2156,-157.1298,1500,kW,active,2016-09-15
+pp_003,East End Hydro Plant,hydro_plant,East Molokai stream,21.182,-156.88,800,kW,active,2014-11-20
+pp_004,Ocean Current Generator,ocean_plant,Kaunakakai bay,21.195,-157.055,500,kW,active,2018-03-05
+ps_001,Power Sensor - Wind Farm,power_sensor,West Molokai ridge,21.205,-157.07,,,active,
+ps_002,Power Sensor - Solar Array,power_sensor,Maunaloa plains,21.2156,-157.1298,,,active,
+sub_001,Generation Substation,substation,"100 Power Rd, Kaunakakai",21.1952,-157.0547,5000,kW,active,
+line_001,Transmission Line - West Corridor,transmission_line,West route,21.205,-157.07,,,active,
+scada_srv_001,Power SCADA Server,scada_server,"100 Power Rd, Kaunakakai",21.1952,-157.0547,,,active,2015-01-10
+paccom_001,PacCom Central Gateway,communication_node,"100 Power Rd, Kaunakakai",21.1952,-157.0547,,,active,
+paccom_002,PacCom West Relay,communication_node,Maunaloa Ridge,21.2156,-157.1298,,,active,
+paccom_003,PacCom East Relay,communication_node,East End Rd,21.1865,-156.8945,,,active,
+rtu_001,RTU - Generation Substation,rtu,Generation Substation,21.1952,-157.0547,,,active,2015-01-10

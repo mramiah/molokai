@@ -1,0 +1,348 @@
+{
+  "metadata": {
+    "system": "Pacific Power SCADA",
+    "service": "Electric Generation",
+    "city": "Molokai",
+    "created_date": "2026-03-01T20:08:55.468753",
+    "graph_statistics": {
+      "total_components": 13,
+      "total_connections": 12,
+      "network_diameter": null,
+      "average_clustering_coefficient": 0.0,
+      "component_types": {
+        "wind_farm": 1,
+        "solar_array": 1,
+        "hydro_plant": 1,
+        "ocean_plant": 1,
+        "power_sensor": 2,
+        "substation": 1,
+        "transmission_line": 1,
+        "scada_server": 1,
+        "communication_node": 3,
+        "rtu": 1
+      },
+      "connection_types": {
+        "communication": 4,
+        "control": 1,
+        "monitoring": 2,
+        "electrical": 5
+      }
+    }
+  },
+  "components": [
+    {
+      "id": "pp_001",
+      "name": "Kaunakakai Wind Farm",
+      "component_type": "wind_farm",
+      "location": "West Molokai ridge",
+      "latitude": 21.205,
+      "longitude": -157.07,
+      "capacity": 2000,
+      "unit": "kW",
+      "operational_status": "active",
+      "installed_date": "2015-06-01",
+      "metadata": {
+        "turbines": 20
+      }
+    },
+    {
+      "id": "pp_002",
+      "name": "Maunaloa Solar Array",
+      "component_type": "solar_array",
+      "location": "Maunaloa plains",
+      "latitude": 21.2156,
+      "longitude": -157.1298,
+      "capacity": 1500,
+      "unit": "kW",
+      "operational_status": "active",
+      "installed_date": "2016-09-15",
+      "metadata": {
+        "panels": 5000
+      }
+    },
+    {
+      "id": "pp_003",
+      "name": "East End Hydro Plant",
+      "component_type": "hydro_plant",
+      "location": "East Molokai stream",
+      "latitude": 21.182,
+      "longitude": -156.88,
+      "capacity": 800,
+      "unit": "kW",
+      "operational_status": "active",
+      "installed_date": "2014-11-20",
+      "metadata": {}
+    },
+    {
+      "id": "pp_004",
+      "name": "Ocean Current Generator",
+      "component_type": "ocean_plant",
+      "location": "Kaunakakai bay",
+      "latitude": 21.195,
+      "longitude": -157.055,
+      "capacity": 500,
+      "unit": "kW",
+      "operational_status": "active",
+      "installed_date": "2018-03-05",
+      "metadata": {}
+    },
+    {
+      "id": "ps_001",
+      "name": "Power Sensor - Wind Farm",
+      "component_type": "power_sensor",
+      "location": "West Molokai ridge",
+      "latitude": 21.205,
+      "longitude": -157.07,
+      "capacity": null,
+      "unit": null,
+      "operational_status": "active",
+      "installed_date": null,
+      "metadata": {}
+    },
+    {
+      "id": "ps_002",
+      "name": "Power Sensor - Solar Array",
+      "component_type": "power_sensor",
+      "location": "Maunaloa plains",
+      "latitude": 21.2156,
+      "longitude": -157.1298,
+      "capacity": null,
+      "unit": null,
+      "operational_status": "active",
+      "installed_date": null,
+      "metadata": {}
+    },
+    {
+      "id": "sub_001",
+      "name": "Generation Substation",
+      "component_type": "substation",
+      "location": "100 Power Rd, Kaunakakai",
+      "latitude": 21.1952,
+      "longitude": -157.0547,
+      "capacity": 5000,
+      "unit": "kW",
+      "operational_status": "active",
+      "installed_date": null,
+      "metadata": {}
+    },
+    {
+      "id": "line_001",
+      "name": "Transmission Line - West Corridor",
+      "component_type": "transmission_line",
+      "location": "West route",
+      "latitude": 21.205,
+      "longitude": -157.07,
+      "capacity": null,
+      "unit": null,
+      "operational_status": "active",
+      "installed_date": null,
+      "metadata": {
+        "length_km": 7,
+        "voltage_kv": 69
+      }
+    },
+    {
+      "id": "scada_srv_001",
+      "name": "Power SCADA Server",
+      "component_type": "scada_server",
+      "location": "100 Power Rd, Kaunakakai",
+      "latitude": 21.1952,
+      "longitude": -157.0547,
+      "capacity": null,
+      "unit": null,
+      "operational_status": "active",
+      "installed_date": "2015-01-10",
+      "metadata": {}
+    },
+    {
+      "id": "paccom_001",
+      "name": "PacCom Central Gateway",
+      "component_type": "communication_node",
+      "location": "100 Power Rd, Kaunakakai",
+      "latitude": 21.1952,
+      "longitude": -157.0547,
+      "capacity": null,
+      "unit": null,
+      "operational_status": "active",
+      "installed_date": null,
+      "metadata": {
+        "provider": "PacCom",
+        "type": "fiber/5G",
+        "bandwidth_gbps": 100
+      }
+    },
+    {
+      "id": "paccom_002",
+      "name": "PacCom West Relay",
+      "component_type": "communication_node",
+      "location": "Maunaloa Ridge",
+      "latitude": 21.2156,
+      "longitude": -157.1298,
+      "capacity": null,
+      "unit": null,
+      "operational_status": "active",
+      "installed_date": null,
+      "metadata": {
+        "provider": "PacCom",
+        "type": "5G",
+        "bandwidth_gbps": 25
+      }
+    },
+    {
+      "id": "paccom_003",
+      "name": "PacCom East Relay",
+      "component_type": "communication_node",
+      "location": "East End Rd",
+      "latitude": 21.1865,
+      "longitude": -156.8945,
+      "capacity": null,
+      "unit": null,
+      "operational_status": "active",
+      "installed_date": null,
+      "metadata": {
+        "provider": "PacCom",
+        "type": "5G",
+        "bandwidth_gbps": 25
+      }
+    },
+    {
+      "id": "rtu_001",
+      "name": "RTU - Generation Substation",
+      "component_type": "rtu",
+      "location": "Generation Substation",
+      "latitude": 21.1952,
+      "longitude": -157.0547,
+      "capacity": null,
+      "unit": null,
+      "operational_status": "active",
+      "installed_date": "2015-01-10",
+      "metadata": {}
+    }
+  ],
+  "connections": [
+    {
+      "source_id": "paccom_001",
+      "target_id": "paccom_002",
+      "connection_type": "communication",
+      "flow_direction": "bidirectional",
+      "capacity": null,
+      "length_km": null,
+      "voltage_kv": null,
+      "metadata": {
+        "link": "fiber_trunk"
+      }
+    },
+    {
+      "source_id": "paccom_001",
+      "target_id": "paccom_003",
+      "connection_type": "communication",
+      "flow_direction": "bidirectional",
+      "capacity": null,
+      "length_km": null,
+      "voltage_kv": null,
+      "metadata": {
+        "link": "fiber_trunk"
+      }
+    },
+    {
+      "source_id": "scada_srv_001",
+      "target_id": "paccom_001",
+      "connection_type": "communication",
+      "flow_direction": "bidirectional",
+      "capacity": null,
+      "length_km": null,
+      "voltage_kv": null,
+      "metadata": {}
+    },
+    {
+      "source_id": "rtu_001",
+      "target_id": "paccom_002",
+      "connection_type": "communication",
+      "flow_direction": "bidirectional",
+      "capacity": null,
+      "length_km": null,
+      "voltage_kv": null,
+      "metadata": {}
+    },
+    {
+      "source_id": "scada_srv_001",
+      "target_id": "rtu_001",
+      "connection_type": "control",
+      "flow_direction": "bidirectional",
+      "capacity": null,
+      "length_km": null,
+      "voltage_kv": null,
+      "metadata": {}
+    },
+    {
+      "source_id": "rtu_001",
+      "target_id": "ps_001",
+      "connection_type": "monitoring",
+      "flow_direction": "unidirectional",
+      "capacity": null,
+      "length_km": null,
+      "voltage_kv": null,
+      "metadata": {}
+    },
+    {
+      "source_id": "rtu_001",
+      "target_id": "ps_002",
+      "connection_type": "monitoring",
+      "flow_direction": "unidirectional",
+      "capacity": null,
+      "length_km": null,
+      "voltage_kv": null,
+      "metadata": {}
+    },
+    {
+      "source_id": "pp_001",
+      "target_id": "line_001",
+      "connection_type": "electrical",
+      "flow_direction": "bidirectional",
+      "capacity": 2000,
+      "length_km": null,
+      "voltage_kv": 69,
+      "metadata": {}
+    },
+    {
+      "source_id": "pp_002",
+      "target_id": "line_001",
+      "connection_type": "electrical",
+      "flow_direction": "bidirectional",
+      "capacity": 1500,
+      "length_km": null,
+      "voltage_kv": 69,
+      "metadata": {}
+    },
+    {
+      "source_id": "pp_003",
+      "target_id": "sub_001",
+      "connection_type": "electrical",
+      "flow_direction": "bidirectional",
+      "capacity": 800,
+      "length_km": null,
+      "voltage_kv": 12,
+      "metadata": {}
+    },
+    {
+      "source_id": "pp_004",
+      "target_id": "sub_001",
+      "connection_type": "electrical",
+      "flow_direction": "bidirectional",
+      "capacity": 500,
+      "length_km": null,
+      "voltage_kv": 12,
+      "metadata": {}
+    },
+    {
+      "source_id": "line_001",
+      "target_id": "sub_001",
+      "connection_type": "electrical",
+      "flow_direction": "bidirectional",
+      "capacity": 3500,
+      "length_km": null,
+      "voltage_kv": 69,
+      "metadata": {}
+    }
+  ]
+}

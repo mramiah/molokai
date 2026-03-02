@@ -1,0 +1,13 @@
+source_id,target_id,connection_type,flow_direction,capacity,length_km,voltage_kv
+paccom_001,paccom_002,communication,bidirectional,,,
+paccom_001,paccom_003,communication,bidirectional,,,
+scada_srv_001,paccom_001,communication,bidirectional,,,
+rtu_001,paccom_002,communication,bidirectional,,,
+scada_srv_001,rtu_001,control,bidirectional,,,
+rtu_001,ps_001,monitoring,unidirectional,,,
+rtu_001,ps_002,monitoring,unidirectional,,,
+pp_001,line_001,electrical,bidirectional,2000,,69
+pp_002,line_001,electrical,bidirectional,1500,,69
+pp_003,sub_001,electrical,bidirectional,800,,12
+pp_004,sub_001,electrical,bidirectional,500,,12
+line_001,sub_001,electrical,bidirectional,3500,,69

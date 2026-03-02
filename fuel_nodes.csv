@@ -1,0 +1,8 @@
+id,name,node_type,latitude,longitude
+water_tp,Water Treatment Plant,plant,21.1952,-157.0547
+electric_sub1,Kaunakakai Substation,substation,21.1952,-157.0547
+electric_sub2,East End Substation,substation,21.1865,-156.8945
+treatment_tp,Wastewater Treatment Plant,plant,21.1952,-157.0547
+fs_001,Fuel Storage Kaunakakai,fuel_storage,21.194,-157.052
+fs_002,Fuel Storage East End,fuel_storage,21.186,-156.895
+fs_003,Fuel Storage North Shore,fuel_storage,21.248,-157.062

@@ -1,0 +1,24 @@
+id,name,component_type,location,latitude,longitude,capacity,unit,operational_status,installed_date
+tp_001,Molokai Wastewater Treatment Plant,treatment_plant,"500 Treatment Rd, Kaunakakai, Molokai, HI",21.1952,-157.0547,3000,gpm,active,2014-07-01
+scada_srv_001,Central SCADA Server,scada_server,"500 Treatment Rd, Kaunakakai, Molokai, HI",21.1952,-157.0547,,,active,2017-02-10
+paccom_001,PacCom Central Gateway,communication_node,"100 Power Rd, Kaunakakai, Molokai, HI",21.1952,-157.0547,,,active,
+paccom_002,PacCom North Tower,communication_node,"North Shore Rd, Molokai, HI",21.2482,-157.0623,,,active,
+paccom_003,PacCom East Hub,communication_node,"East End Rd, Molokai, HI",21.1865,-156.8945,,,active,
+ls_001,Lift Station - North Shore,lift_station,"900 North Shore Rd, Molokai, HI",21.2482,-157.0623,1500,gpm,active,2016-05-20
+ls_002,Lift Station - East End,lift_station,"1200 East End Rd, Molokai, HI",21.1865,-156.8945,1000,gpm,active,2016-05-20
+sm_001,Sewer Main - North,sewer_main,North Shore corridor,21.2312,-157.0736,,,active,
+sm_002,Sewer Main - Central,sewer_main,Kaunakakai town,21.1923,-157.0621,,,active,
+sm_003,Sewer Main - East,sewer_main,East End corridor,21.1834,-156.8756,,,active,
+mh_001,Manhole - Maunaloa Residential,manhole,Maunaloa,21.2156,-157.1298,,,active,
+mh_002,Manhole - Kaunakakai Commercial,manhole,Kaunakakai Downtown,21.1943,-157.0519,,,active,
+mh_003,Manhole - Pukoo Industrial,manhole,Pukoo,21.1745,-156.8234,,,active,
+mh_004,Manhole - Mapulehu South,manhole,Mapulehu,21.1621,-157.0345,,,active,
+fm_001,Flow Meter - North Main,flow_meter,North Shore main,21.2312,-157.0736,,,active,
+ls_003,Level Sensor - North Lift Station,level_sensor,North Shore lift,21.2482,-157.0623,,,active,
+ts_001,Turbidity Sensor - Treatment Plant Exit,turbidity_sensor,Treatment Plant,21.1952,-157.0547,,,active,
+pg_001,Pressure Gauge - East Main,pressure_gauge,East corridor,21.1834,-156.8756,,,active,
+iv_001,Isolation Valve - North Main,isolation_valve,North main junction,21.2401,-157.0679,,,active,
+cv_001,Check Valve - North Lift,check_valve,North lift station,21.2482,-157.0623,,,active,
+rtu_001,RTU - Treatment Plant,rtu,Treat Plant,21.1952,-157.0547,,,active,2017-02-10
+rtu_002,RTU - North Lift,rtu,North Shore,21.2482,-157.0623,,,active,2017-02-10
+rtu_003,RTU - East Lift,rtu,East End,21.1865,-156.8945,,,active,2017-02-10

@@ -1,0 +1,21 @@
+id,name,component_type,location,latitude,longitude,capacity,unit,operational_status,installed_date
+sub_001,Kaunakakai Substation,substation,"100 Power Rd, Kaunakakai, Molokai, HI",21.1952,-157.0547,5000,kW,active,2013-04-01
+sub_002,East End Substation,substation,"1400 East End Rd, Molokai, HI",21.1865,-156.8945,3000,kW,active,2013-04-01
+fd_001,Feeder - North Shore,distribution_feeder,North Shore corridor,21.2312,-157.0736,,,active,
+fd_002,Feeder - Central,distribution_feeder,Kaunakakai town,21.1923,-157.0621,,,active,
+fd_003,Feeder - East End,distribution_feeder,East End corridor,21.1834,-156.8756,,,active,
+tr_001,Transformer - Maunaloa,transformer,Maunaloa,21.2156,-157.1298,1000,kVA,active,
+tr_002,Transformer - Pukoo,transformer,Pukoo,21.1745,-156.8234,800,kVA,active,
+br_001,Breaker - Kaunakakai Substation,breaker,Kaunakakai Substation,21.1952,-157.0547,,,active,
+br_002,Breaker - East Substation,breaker,East End Substation,21.1865,-156.8945,,,active,
+mt_001,Meter - Maunaloa Residential,meter,Maunaloa,21.2156,-157.1298,,,active,
+mt_002,Meter - Kaunakakai Commercial,meter,Kaunakakai Downtown,21.1943,-157.0519,,,active,
+vs_001,Voltage Sensor - North Feeder,voltage_sensor,North Feeder,21.2312,-157.0736,,,active,
+cs_001,Current Sensor - East Feeder,current_sensor,East Feeder,21.1834,-156.8756,,,active,
+ts_001,Temperature Sensor - Transformer Pukoo,temperature_sensor,Pukoo Transformer,21.1745,-156.8234,,,active,
+scada_srv_001,Central SCADA Server,scada_server,"100 Power Rd, Kaunakakai, Molokai, HI",21.1952,-157.0547,,,active,2017-01-15
+paccom_001,PacCom Central Gateway,communication_node,"100 Power Rd, Kaunakakai, Molokai, HI",21.1952,-157.0547,,,active,
+paccom_002,PacCom North Relay,communication_node,"North Shore Rd, Molokai, HI",21.2482,-157.0623,,,active,
+paccom_003,PacCom East Relay,communication_node,"East End Rd, Molokai, HI",21.1865,-156.8945,,,active,
+rtu_001,RTU - Kaunakakai Substation,rtu,Kaunakakai Substation,21.1952,-157.0547,,,active,2017-01-15
+rtu_002,RTU - East Substation,rtu,East End Substation,21.1865,-156.8945,,,active,2017-01-15
